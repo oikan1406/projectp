@@ -1,0 +1,192 @@
+@import url('(link unavailable)');
+
+
+body{
+height: 100vh;
+background: url(bday.gif);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: brightness(150%); 
+filter: contrast(120%);
+
+}
+
+.container {
+perspective: 1000px;
+}
+
+.birthdayCard {
+position: relative;
+  left: -100px;
+  margin-right: 200px; 
+  width: 400px;
+  height: 500px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.birthdayCard:hover {
+transform: perspective(2500px) rotate(5deg);
+box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.birthdayCard:hover .cardFront {
+transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .happy {
+visibility: hidden;
+}
+
+.cardFront {
+  position: relative;
+  background-image: url('file:///C:/Users/Oikantika/Desktop/p/birthday_web-main/img4.png');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 30px 0 50px rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
+  z-index: 1; /* Added z-index */
+}
+
+.happy {
+font-family: Tahoma, sans-serif;
+text-align: center;
+margin: 30px;
+background-image: linear-gradient(120deg, #ffd856 0%, #f98c6e 100%);
+transition: 0.1s;
+}
+
+.name {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  }
+  
+.cardInside {
+position: absolute;
+background-color: #d6eef7;
+width: 400px;
+height: 500px;
+z-index: -1;
+left: 0;
+top: 0;
+box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+.cardInside p {
+font-family: "Brush Script MT", cursive;
+margin:  10px;
+color: #333;
+margin-top: 10px; 
+}
+
+.name {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  }
+
+
+
+.block {
+position: absolute;
+top: 200px;
+right: 600px;
+perspective: 800px;
+}
+
+.cardInside {
+  background-image: url('file:///C:/Users/Oikantika/Desktop/p/birthday_web-main/Untitled%20design.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  background-blend-mode: darken;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #363636;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+
+ 
+
+.frames {
+width: 400px;
+height: 150px;
+box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0 0.8rem;
+transform: rotateY(-230deg) rotateX(20deg);
+position: absolute;
+background-image: linear-gradient(120deg, #f6e6ea, #f3c5f7, #c9c3f8); 
+}
+
+.frames img {
+width: 125px;
+height: 125px;
+border-radius: 50%;
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.frames p {
+font-size: 20px;
+font-weight: bold;
+transform: rotateY(180deg);
+color: #010100;
+font-family: 'Times New Roman', Serif; 
+}
+
+.frames:nth-child(1) {
+top: -110px;
+z-index: -1;
+background-color: rgb(114, 45, 5);
+background-image: linear-gradient(120deg, #411f03, #eea33b, #f6e6ea), url('file:///C:/Users/Oikantika/Desktop/project%2018/birthday_web-main/img5.png'); 
+background-size: 100% 100%, cover;
+background-position: center, center;
+}
+
+.frames:nth-child(2) {
+background-color: rgb(218, 113, 32);
+background-image: linear-gradient(120deg,#914507, #eea33b, #f6e6ea ), url('file:///C:/Users/Oikantika/Desktop/project%2018/birthday_web-main/img5.png'); 
+background-size: 100% 100%, cover;
+background-position: center, center;
+
+}
+
+.frames:nth-child(3) {
+top: 100px;
+background-color: rgb(252, 169, 3);
+background-image: linear-gradient(120deg, #ff7707, #eea33b, #f6e6ea), url('file:///C:/Users/Oikantika/Desktop/project%2018/birthday_web-main/img5.png'); 
+background-size: 100% 100%, cover;
+background-position: center, center;
+
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.birthdayCard {
+display: block;
+margin: 40px auto;
+}
